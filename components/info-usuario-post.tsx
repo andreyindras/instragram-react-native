@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
     },
     
     txtUsuario: {
-        fontWeight: "800"
+        fontWeight: "600"
     }
 })
