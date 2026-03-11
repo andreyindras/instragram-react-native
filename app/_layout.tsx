@@ -1,24 +1,18 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+import { ScrollView, StyleSheet } from "react-native";
+import InfoUsuario from "../components/info-usuario-post";
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
+ 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <ScrollView style={styles.container}>
+      <InfoUsuario imagem={require("../assets/images/img-luis-suarez.jpg")} usuario={"LuisitoPistoleiro1903"}></InfoUsuario>
+    </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    marginHorizontal: 8
+  }
+
+})
