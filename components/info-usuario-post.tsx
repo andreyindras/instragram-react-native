@@ -21,14 +21,15 @@ const styles = StyleSheet.create({
     },
     
     imgUsuario: {
-        width: 35,
-        height: 35,
+        width: 30,
+        height: 30,
         borderRadius: 20,
         marginRight: 8
     },
     
     txtUsuario: {
-        fontWeight: "600"
+        fontWeight: "600",
+        fontSize: 12
     },
 
     iconTresPontinhos: {

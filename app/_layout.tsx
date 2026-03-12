@@ -2,6 +2,7 @@ import { ScrollView, StyleSheet } from "react-native";
 import InfoUsuario from "../components/info-usuario-post";
 import ImagemPost from "../components/imagem-post";
 import InteracaoPost from "../components/interacao-post";
+import LegendaPost from "../components/legenda-post";
 
 export default function RootLayout() {
  
@@ -10,6 +11,7 @@ export default function RootLayout() {
       <InfoUsuario imagem={require("../assets/images/img-luis-suarez.jpg")} usuario={"LuisitoPistoleiro1903"}></InfoUsuario>
       <ImagemPost imagem={require("../assets/images/img-luis-suarez.jpg")}></ImagemPost>
       <InteracaoPost qtdCurtidas={"703 mil"} qtdComentarios={7.893} qtdRepostagem={"96,2 mil"} qtdEnvios={"53,7 mil"}></InteracaoPost>
+      <LegendaPost usuario={"LuisitoPistoleiro1903"} legenda={"El Pistoleiro"}></LegendaPost>
     </ScrollView>
   );
 }
