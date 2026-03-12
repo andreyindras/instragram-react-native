@@ -23,6 +23,10 @@ export default function InteracaoPost({qtdCurtidas, qtdComentarios, qtdRepostage
                 <Icon name="send" style={styles.iconImg}></Icon>
                 <Text style={styles.txtQtdInteracao}>{qtdEnvios}</Text>
             </View>
+
+             <View style={styles.areaSalvar}>  
+                <Icon name="bookmark" style={styles.iconImg}></Icon>
+            </View>
         </View>
     );
 }
@@ -38,6 +42,10 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         marginRight: 16
+    },
+
+    areaSalvar: {
+        marginLeft: "auto"
     },
 
     iconImg: {
