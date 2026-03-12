@@ -45,15 +45,15 @@ const styles = StyleSheet.create({
     },
 
     areaSalvar: {
-        marginLeft: "auto"
+        marginLeft: "auto",
     },
 
     iconImg: {
-        fontSize: 18,
+        fontSize: 20,
         paddingRight: 6
     },
 
     txtQtdInteracao: {
-        fontSize: 10
+        fontSize: 12
     }
 })

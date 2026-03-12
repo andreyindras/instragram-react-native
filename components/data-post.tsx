@@ -10,11 +10,12 @@ export default function DataPost({dataPost}) {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 4
+        marginTop: 4,
+        marginBottom: 14
     },
 
     txtDataPost: {
-        fontWeight: 100,
-        fontSize: 8
+        color: "#808080",
+        fontSize: 10
     }
 })

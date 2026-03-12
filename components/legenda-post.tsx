@@ -17,11 +17,11 @@ const styles = StyleSheet.create({
 
     txtUsuario: {
         fontWeight: "600",
-        fontSize: 10
+        fontSize: 11
     },
 
     txtLegenda: {
-        fontSize: 10,
+        fontSize: 11,
         marginLeft: 4
     }
 })
